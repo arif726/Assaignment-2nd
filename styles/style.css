@@ -50,7 +50,6 @@ button a{
 .player-profile{
      display: grid;
      grid-template-columns: repeat(3, 1fr);
-     align-items: center;
      gap: 30px;
      margin-top: 70px;
      margin-left: 180px;
@@ -81,4 +80,19 @@ button a{
     font-weight: 400;
     font-size: 16px;
 }
-
+/*------------
+    Game-video
+ ---------- */
+.popular-videos{
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
+ }
+.game-video{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 30px;
+ }
+/*------------------
+     Footer
+     ----------- */
