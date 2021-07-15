@@ -14,7 +14,7 @@ body{
 --------------- */
 .web-banner{
     display: flex;
-    width: 1440px;
+    width: 1404px;
     height: 677px;
     background-color: #2D25A0;
 }
@@ -40,14 +40,14 @@ button:hover{
     transform: scale(1.1);
 }
 .banner-image img{
-    width: 556px;
+    width: 536px;
     height: 438px;
     padding-left: 102px;
     padding-right: 141px;
     margin-top: 153px;
 }
-#banner-image:hover{
-    transform: scale(1.2);
+.banner-image:hover{
+    transform: scale(1.1);
 }
 /* ------------
    player-blog style
@@ -62,8 +62,8 @@ button:hover{
  }
 .player-blog{
     width: 330px;
-    height: 474px;
-    box-shadow: 0px 0px 40px 0px gray;
+    height: 490px;
+    box-shadow: 0px 0px 40px 0px rgba(216, 202, 202, 0.993);
 }
 .player-blog .player-image img{
     width: 300px;
@@ -90,8 +90,8 @@ button:hover{
  ---------- */
 .popular-videos{
     margin-top: 70px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 140px;
+    margin-right: 140px;
  }
 .game-video{
      display: grid;
@@ -133,38 +133,25 @@ footer{
 .fa{
     color: #969BAB;
 }
-/*--------------
-   Media Queries
- ------------- */
- /*------------
-   Mobile Device
- ---------------- */
- @media only screen and (max-width:688px) {
-     .web-banner{
-         width: 100%;
-     }
-     .web-banner .banner-text h1{
-         width: 100%;
-         padding-left: 20px;
-         margin-top: 70px;
-     }
- }
- @media only screen and (max-width:688px) {
+/*----------------------
+   Top-banner-Responsive
+------------------ */
+@media (max-width: 480px){
     .web-banner{
     display: block;
-    width: 360px;
+    width:  480px;
     height: 695px;
     color: #2D25A0;
     }
-    .web-banner .banner-text h1{
-    position: absolute;
-    top: 90px;
-    font-size: 40px;
-    line-height: 50px;
-}
+.web-banner .banner-text h1{
+         width: 300px;
+         padding-left: 20px;
+         margin-top: 0;
+         font-size: 32px;
+     }
 .web-banner button{
     position: absolute;
-    top: 320px;
+    top: 200px;
     width: 168px;
     height: 44px;
     margin-left: 80px;
@@ -173,20 +160,70 @@ footer{
 .banner-image img{
     width: 329px;
     height: 259px;
-    margin-top: 400px;
+    margin-top: 150px;
     padding-left: 15px;
 }
- }
- .player-profile{
-     grid-template-columns: repeat(1, 1fr);
-     gap: 0;
-     margin-top: 0;
-     margin-left: 0;
-     margin-right: 0;
- }
- .game-video{
-     grid-template-columns: repeat(1, 1fr);
- }
-.footer-box{
-    width: 20%;
 }
+
+/* ---------------
+   Player-blog-Responsive 
+   ---------------*/
+   @media (max-width: 480px) {
+    .player-profile{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0;
+     margin-right: 0;
+     margin-top: 20px;
+ }
+   }
+
+
+/*---------------------
+   Video-Responsive 
+   ---------------*/
+@media (max-width: 480px) {
+    .popular-videos{
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+ }
+    .game-video{
+     grid-template-columns: repeat(1, 1fr);
+ }
+ iframe{
+     width: 330px;
+
+ }
+}
+/*-----------------
+   Footer-Responsive
+------------------- */
+@media (max-width: 480px) {
+    footer{
+    width: 40%;
+    height: 45px;
+    margin-top: 30px
+}
+.footer-box{
+    position: relative;
+    width: 120px;
+    height: 50px;
+    bottom: 16px;
+    margin-left: 115px;
+    margin-right: 120px;
+}
+.footer-box img{
+    width: 120px;
+    height: 25px;
+}
+.footer-logo{
+    margin-left: 0;
+}
+.footer-box a{
+    width: 8px;
+    height: 8px;
+    margin-left: 12px;
+}
+}
+
